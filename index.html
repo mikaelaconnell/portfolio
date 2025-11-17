@@ -4,12 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mikaela Connell - Data Scientist & ML Engineer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
-        
         * {
             margin: 0;
             padding: 0;
@@ -17,7 +13,7 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             color: #e0e6ed;
             background: #0f1b2e;
@@ -46,7 +42,6 @@
             color: rgba(255,255,255,0.85);
             font-weight: 500;
             transition: color 0.3s;
-            font-size: 0.95rem;
         }
 
         nav a:hover {
@@ -81,35 +76,6 @@
             50% { opacity: 1; }
         }
 
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        .header-content {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.5rem;
-            animation: fadeInUp 0.8s ease-out;
-        }
-
-        .header-text {
-            animation: fadeInUp 0.8s ease-out 0.2s both;
-        }
-
         header h1 {
             font-family: 'Crimson Text', serif;
             font-size: 3.5rem;
@@ -117,7 +83,6 @@
             position: relative;
             font-weight: 600;
             letter-spacing: -0.5px;
-            line-height: 1.2;
         }
 
         header p {
@@ -125,7 +90,6 @@
             font-size: 1.5rem;
             opacity: 0.85;
             position: relative;
-            font-weight: 400;
             margin-bottom: 1rem;
         }
 
@@ -154,7 +118,6 @@
             background: rgba(66, 135, 245, 0.2);
             border-color: #4287f5;
             transform: translateY(-3px);
-            box-shadow: 0 8px 16px rgba(66, 135, 245, 0.3);
         }
 
         .social-icon svg {
@@ -175,7 +138,6 @@
             border-radius: 12px;
             box-shadow: 0 4px 16px rgba(0,0,0,0.3);
             border: 1px solid rgba(66, 135, 245, 0.1);
-            animation: fadeInUp 0.6s ease-out;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -225,13 +187,11 @@
             overflow: hidden;
             border: 4px solid rgba(66, 135, 245, 0.3);
             box-shadow: 0 8px 32px rgba(66, 135, 245, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            animation: fadeIn 1s ease-out 0.3s both;
+            transition: transform 0.3s ease;
         }
 
         .profile-photo:hover {
             transform: scale(1.05);
-            box-shadow: 0 12px 48px rgba(66, 135, 245, 0.5);
         }
 
         .profile-photo img {
@@ -361,7 +321,6 @@
             border: 1px solid rgba(66, 135, 245, 0.2);
             font-weight: 500;
             transition: all 0.3s ease;
-            cursor: default;
         }
 
         .skill-tag:hover {
@@ -401,33 +360,16 @@
                 font-size: 2rem;
             }
 
-            nav ul {
-                gap: 1rem;
-            }
-
-            .achievement-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .profile-photo {
-                width: 150px;
-                height: 150px;
-                min-width: 150px;
-            }
-
-            .header-content {
-                gap: 1.5rem;
-            }
-
             .about-container {
                 flex-direction: column;
                 align-items: center;
                 gap: 2rem;
             }
 
-            .about-text {
-                text-align: center;
+            .profile-photo {
+                width: 150px;
+                height: 150px;
+                min-width: 150px;
             }
 
             .project-header {
@@ -450,33 +392,29 @@
     </nav>
 
     <header>
-        <div class="header-content">
-            <div class="header-text">
-                <h1>Mikaela Connell</h1>
-                <p>Data Scientist | Machine Learning Engineer</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/mikaelaconnell/" target="_blank" class="social-icon" title="LinkedIn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                        </svg>
-                    </a>
-                    <a href="https://www.strava.com/athletes/113990339" target="_blank" class="social-icon" title="Strava">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169"/>
-                        </svg>
-                    </a>
-                    <a href="https://github.com/mikaelaconnell" target="_blank" class="social-icon" title="GitHub">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </a>
-                    <a href="mailto:mconnell18@students.claremontmckenna.edu" class="social-icon" title="Email">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+        <h1>Mikaela Connell</h1>
+        <p>Data Scientist | Machine Learning Engineer</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/mikaelaconnell/" target="_blank" class="social-icon" title="LinkedIn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </a>
+            <a href="https://www.strava.com/athletes/113990339" target="_blank" class="social-icon" title="Strava">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169"/>
+                </svg>
+            </a>
+            <a href="https://github.com/mikaelaconnell" target="_blank" class="social-icon" title="GitHub">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+            <a href="mailto:mconnell18@students.claremontmckenna.edu" class="social-icon" title="Email">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+                </svg>
+            </a>
         </div>
     </header>
 
@@ -608,4 +546,165 @@
                     <h3>Vehicle Sales Forecasting</h3>
                     <a href="https://github.com/mikaelaconnell" target="_blank" class="github-link" title="View on GitHub">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
+                <p class="project-description">Created a time series forecasting model to predict vehicle sales using historical data and external economic indicators. Applied ARIMA models and explored seasonality patterns to provide actionable business insights. The project demonstrates practical applications of forecasting techniques for inventory management and business planning in the automotive industry.</p>
+                <div class="skills">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">ARIMA</span>
+                    <span class="skill-tag">Time Series</span>
+                    <span class="skill-tag">Forecasting</span>
+                    <span class="skill-tag">pandas</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            
+            <div class="achievement">
+                <div class="achievement-header">
+                    <h3>Master of Liberal Arts in Data Science</h3>
+                    <span class="date">Expected May 2027</span>
+                </div>
+                <p class="organization">Harvard University Extension School</p>
+                <ul class="details">
+                    <li><strong>Relevant Coursework:</strong> Elements of Data Science and Statistical Learning with R, Foundations of Data Science and Engineering, Statistical Data Modeling, Fundamentals of Data Science II</li>
+                    <li><strong>Techniques:</strong> Linear/logistic regression, subset selection, ridge/lasso regularization, bootstrapping, PCA, clustering, classification (LDA, QDA, KNN, Random Forest, SVMs)</li>
+                </ul>
+            </div>
+
+            <div class="achievement">
+                <div class="achievement-header">
+                    <h3>Data Science Certificate</h3>
+                    <span class="date">April 2025</span>
+                </div>
+                <p class="organization">Flatiron School</p>
+                <ul class="details">
+                    <li><strong>Capstone Project:</strong> MacroBTC Insights - Bitcoin prediction dashboard using macroeconomic indicators and ML models</li>
+                    <li>Completed intensive program covering machine learning, statistical modeling, and data engineering</li>
+                    <li>Built multiple end-to-end projects including breast cancer classification and vehicle sales forecasting</li>
+                </ul>
+            </div>
+
+            <div class="achievement">
+                <div class="achievement-header">
+                    <h3>Bachelor of Science in Nursing (Accelerated)</h3>
+                    <span class="date">December 2021</span>
+                </div>
+                <p class="organization">New York University</p>
+            </div>
+
+            <div class="achievement">
+                <div class="achievement-header">
+                    <h3>Bachelor of Arts in Economics</h3>
+                    <span class="date">May 2018</span>
+                </div>
+                <p class="organization">Claremont McKenna College</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills & Expertise</h2>
+            
+            <h3>Machine Learning & AI</h3>
+            <div class="skills">
+                <span class="skill-tag">Regression Models</span>
+                <span class="skill-tag">Lasso/Ridge</span>
+                <span class="skill-tag">Random Forest</span>
+                <span class="skill-tag">XGBoost</span>
+                <span class="skill-tag">Time Series (ARIMA)</span>
+                <span class="skill-tag">CNNs</span>
+                <span class="skill-tag">Clustering</span>
+                <span class="skill-tag">Gemini Pro/Flash</span>
+                <span class="skill-tag">LLM Evaluation</span>
+                <span class="skill-tag">Prompt Engineering</span>
+            </div>
+
+            <h3>Programming & Tools</h3>
+            <div class="skills">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">R</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Spark</span>
+                <span class="skill-tag">PySpark</span>
+                <span class="skill-tag">scikit-learn</span>
+                <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">pandas</span>
+                <span class="skill-tag">NumPy</span>
+            </div>
+
+            <h3>Cloud & Data Engineering</h3>
+            <div class="skills">
+                <span class="skill-tag">Google Cloud Platform</span>
+                <span class="skill-tag">Vertex AI</span>
+                <span class="skill-tag">BigQuery</span>
+                <span class="skill-tag">Cloud Run</span>
+                <span class="skill-tag">Pub/Sub</span>
+                <span class="skill-tag">Dialogflow</span>
+                <span class="skill-tag">ETL Pipelines</span>
+            </div>
+
+            <h3>Statistics & Experimentation</h3>
+            <div class="skills">
+                <span class="skill-tag">A/B Testing</span>
+                <span class="skill-tag">Causal Inference</span>
+                <span class="skill-tag">Uplift Modeling</span>
+                <span class="skill-tag">Bootstrapping</span>
+                <span class="skill-tag">Propensity Methods</span>
+                <span class="skill-tag">Sequential Testing</span>
+            </div>
+
+            <h3>Visualization & Communication</h3>
+            <div class="skills">
+                <span class="skill-tag">Tableau</span>
+                <span class="skill-tag">matplotlib</span>
+                <span class="skill-tag">Streamlit</span>
+                <span class="skill-tag">Data Storytelling</span>
+                <span class="skill-tag">Technical Writing</span>
+                <span class="skill-tag">Cross-functional Collaboration</span>
+            </div>
+
+            <h3>Domain Expertise</h3>
+            <div class="skills">
+                <span class="skill-tag">Forecasting</span>
+                <span class="skill-tag">Personalization</span>
+                <span class="skill-tag">Operations Analytics</span>
+                <span class="skill-tag">Healthcare Analytics</span>
+                <span class="skill-tag">E-commerce</span>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Email:</strong> mconnell18@students.claremontmckenna.edu
+                </div>
+                <div class="contact-item">
+                    <strong>Location:</strong> New York, NY
+                </div>
+                <div class="contact-item">
+                    <strong>Phone:</strong> 845-499-3167
+                </div>
+                <div class="contact-item">
+                    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mikaelaconnell/" target="_blank" style="color: #4287f5; text-decoration: none;">linkedin.com/in/mikaelaconnell</a>
+                </div>
+                <div class="contact-item">
+                    <strong>GitHub:</strong> <a href="https://github.com/mikaelaconnell" target="_blank" style="color: #4287f5; text-decoration: none;">github.com/mikaelaconnell</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Strava:</strong> <a href="https://www.strava.com/athletes/113990339" target="_blank" style="color: #4287f5; text-decoration: none;">strava.com/athletes/113990339</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mikaela Connell. All rights reserved.</p>
+    </footer>
+</body>
+</html>
